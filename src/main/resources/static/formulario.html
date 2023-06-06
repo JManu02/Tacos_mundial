@@ -5,36 +5,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TechShop</title>
+        <title>Tacos Mundial</title>
         <meta charset="UTF-8">
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/Menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/img.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header>
-            <h1>TechShop</h1>
-            <nav>
-                <a href="ejemplo5.html">&triangleleft;</a>
-                <a href="index.html">Home</a>
-                <a href="ejemplo3.html">&triangleright;</a>
+        <a name="inicio"></a>
+        <header class="header">
+            <nav class="nav">
+                <a class = "nav-link logo" href="inicio.html">Tacos Mundial</a>
+                <ul class="nav-menu">
+                    <li class = "nav-menu-item"><a class = "nav-link nav-menu-link" href="adiddas.html">Adiddas</a></li>
+                    <li class = "nav-menu-item"><a class = "nav-link nav-menu-link" href="nike.html">Nike</a></li>
+                    <li class = "nav-menu-item"><a class = "nav-link nav-menu-link" href="puma.html">Puma</a></li>
+                    <li class = "nav-menu-item"><a class = "nav-link nav-menu-link" href="new_balance.html">New Balance</a></li>
+                    <li class = "nav-menu-item"><a class = "nav-link nav-menu-link" href="equipaciones.html">Equipaciones</a></li>
+                    <li class = "nav-menu-item"><a class = "nav-link nav-menu-link" href="acerca_de_nosotros.html">Acerca de Nosostros</a></li>
+                    <li class = "nav-menu-item"><a class = "nav-link nav-menu-link" href="formulario.html">Formulario</a></li>
+                </ul>    
             </nav>
         </header>
         <aside>
             <h2>Formulario</h2>
-            <h3>Uso de etiquetas para form</h3>
-            <p>Otro texto dentro de una barra lateral...</p>
         </aside>
         <section>
             <hr/>
             <article>
-                <h3>Registro de Usuario</h3>
+                <h3>Formulario de Satisfaccion</h3>
                 <form action="/usuario/registro" method="post">
                     Usuario: <input required="true" type="text" name="username" value="" size="15" /><br/>
-                    Contraseña: <input required="true" type="password" name="password" value="" size="10" /><br/>
                     Nombre <input required="true" type="text" name="nombre" value="" size="35" /><br/>
                     Correo <input required="true" type="email" name="correo" value="" size="25" /><br/>
-                    Edad <input type="number" name="edad" value="" min="18" max="68" /><br/>
-                    Fecha Activo <input type="date" name="fActivo" /><br/>
-                    <input type="submit" value="Registro" />
+                    Fecha <input type="date" name="fActivo" /><br/>
+                    Opiniones <input required="true" type="text" name="opinion" value="" size="150" /><br/>
+
+                    <input type="submit" value="Enviar" />
                 </form>
             </article> 
             <hr/>
